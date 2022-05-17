@@ -1,14 +1,54 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
 ul, ol, li{list-style: none;}
 a{text-decoration:none;}
-body{background-color: #111;}
+body{background-color: #111; color: white;}
 
 #wrap{width: 100%; height: 5000px;}
-.container{width: 1340px; height: 100%;margin: 0 auto; border: 1px solid white; }
-header{width: 100%; height: 80px;}
+.container{width: 1340px; height: 100%;margin: 0 auto; border: 1px solid white;}
+
+header{width: 100%; height: 80px;position: fixed;opacity: 0.9; background-color: black; }
+header>.container{display: flex; justify-content: flex-start; align-items: center; text-align: center;}
+header>.container a{width: 250px; line-height: 80px; color: white; font-size: 18px;font-family: 'Noto Sans KR', sans-serif;}
+.logo{width: 250px;line-height: 80px;}
+
+.bg_img{position: absolute;z-index: -500; top: 0;  width: 100%; height: 969px; background-image: url(/img/main/space.jpg);background-size: 100% auto;opacity: 0.5; background-attachment: fixed; background-size: cover; background-position:center;}
 section{width: 100%; height: 969px;}
-#artwork{width: 100%; height: 620px;}
+section>.container{position: relative;}
+.main_text{width: 50%; height:220px; border: 1px solid white;position: absolute; top: 50%; left: 50%;}
+.ctrl_wrap{width: 100%; height: 45px; border: 1px solid white; position: absolute; bottom: 10%;}
+
+#artwork{width: 100%; height: 620px; margin-top: 150px;}
+#artwork>.container{display: flex; justify-content: space-between;}
+.artwork_more_text{width: 320px; height:620px; padding: 25px; border: 1px solid white;}
+.artwork_more_text h3{margin-top: 180px; font-size: 22px;}
+.artwork_more_text h2{margin-top: 20px; font-size: 29px;}
+.artwork_more_text p{margin-top: 40px; line-height: 30px;}
+.artwork_more_text a{margin-top: 40px; text-align: center; border-radius: 17px; display: block; color: white; width: 150px;line-height: 40px; background-color: #888;}
+.artwork_art_img{width: 840px; height: 620px; position: relative;}
+.artwork_art_img img{width: 840px; height: 495px;}
+.art_text{font-size: 15px; line-height: 35px; font-family: 'Noto Sans KR', sans-serif;padding: 30px; width:500px; height: 280px;position: absolute; top: 55%; background-color: #111;}
+.art_text h2{font-size: 23px; margin-bottom: 15px;}
+
 #Berlin{width: 100%; height: 965px;}
-#artwork_slide{width: 100%; height:500px;}
+#Berlin>.container{display: flex; justify-content: space-between;}
+.art_box{width:580px; height:965px;border: 1px solid white;}
+.art_box2{width:550px; height:965px ;border: 1px solid white;}
+
+#artwork_bg{width: 100%; height:900px;}
+#artwork_bg>.container{position: relative;}
+.slide_head_text{width: 100%; height: 150px;border: 1px solid white; position: absolute; top:50px;}
+.artwork_bg_img{width: 100%; height: 460px;border: 1px solid white;}
+
+.artwork_slide{width:90%; height:500px ;border: 1px solid white; margin:-180px 0px 0px 130px}
+
 #explanation{width: 100%; height:600px;}
+
 footer{width: 100%; height:765px;}
