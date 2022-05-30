@@ -29,6 +29,19 @@ $(function () {
     });
 
 
+    $(window).resize(function(){
+        if(window.innerWidth>=1340){
+            $('.left_menu').css("display","flex")
+        }
+    });
+
+    $(window).resize(function(){
+        if(window.innerWidth<=1340){
+            $('.left_menu').css("display","none")
+        }
+    });
+
+
     // 슬라이드
     $('.next').click(function () {
         $('.artwork_slide').stop().animate({ marginLeft: -402 }, 700, function () {
