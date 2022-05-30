@@ -3,6 +3,32 @@ $(function () {
     // 스크롤에 따른 박스 효과
     AOS.init({ duration: 1000 });
 
+    //메뉴 슬라이드
+    $(".menu").click(function () {
+        $(".left_menu").slideToggle(700);
+    });
+
+    $(".nav1").click(function () {
+        $(".nav_1").slideToggle(700);
+    });
+
+    $(".nav2").click(function () {
+        $(".nav_2").slideToggle(700);
+    });
+
+    $(".nav3").click(function () {
+        $(".nav_3").slideToggle(700);
+    });
+
+    $(".nav4").click(function () {
+        $(".nav_4").slideToggle(700);
+    });
+
+    $(".nav5").click(function () {
+        $(".nav_5").slideToggle(700);
+    });
+
+
     // 슬라이드
     $('.next').click(function () {
         $('.artwork_slide').stop().animate({ marginLeft: -402 }, 700, function () {
