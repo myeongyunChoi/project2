@@ -31,7 +31,7 @@ p,
 h2,
 h3,
 h4,
-i,
+li,
 td {
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -140,22 +140,38 @@ td {
         cursor: pointer;
     }
 
-    .bg_img {
+    .bg_img::after{
+        content:"";
         position: absolute;
         z-index: -500;
         top: 0;
         width: 100%;
         height: 800px;
-        background-image: url(../img/main/space.jpg);
-        background-size: 100% auto;
         opacity: 0.5;
+        background-image: url(../img/main/space.jpg);
         background-attachment: fixed;
         background-size: cover;
-        background-position: center;
+        background-position: left;
         -o-background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size: cover;
     }
+
+    /* .bg_img{
+        position: absolute;
+        z-index: -500;
+        top: 0;
+        width: 100%;
+        height: 800px;
+        opacity: 0.5;
+        background-image: url(../img/main/space.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: left;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    } */
 
     .overlay {
         position: absolute;
@@ -173,7 +189,6 @@ td {
         width: 100%;
         height: 850px;
         position: relative;
-        background-attachment:initial;
     }
 
     .main_text {
@@ -198,7 +213,7 @@ td {
         border: 1px solid white;
     }
 
-    */ #artwork {
+    #artwork {
         width: 100%;
         height: auto;
     }
@@ -741,7 +756,6 @@ td {
         width: 100%;
         height: 960px;
         background-image: url(../img/main/space.jpg);
-        background-size: 100% auto;
         opacity: 0.5;
         background-attachment: fixed;
         background-size: cover;
@@ -1308,7 +1322,6 @@ td {
         width: 100%;
         height: 960px;
         background-image: url(../img/main/space.jpg);
-        background-size: 100% auto;
         opacity: 0.5;
         background-attachment: fixed;
         background-size: cover;
