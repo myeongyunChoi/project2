@@ -72,6 +72,7 @@ td {
         font-weight: bold;
         font-size: 17px;
         text-align: center;
+        font-family: 'Noto Sans KR', sans-serif;
     }
 
     .menu:hover {
@@ -681,6 +682,7 @@ td {
         font-weight: bold;
         font-size: 17px;
         text-align: center;
+        font-family: 'Noto Sans KR', sans-serif;
     }
 
     .menu:hover {
@@ -1253,6 +1255,7 @@ td {
         font-weight: bold;
         font-size: 22px;
         display: none;
+        font-family: 'Noto Sans KR', sans-serif;
     }
 
     .menu:hover {
@@ -1292,6 +1295,7 @@ td {
 
     header .container ul li:hover {
         background-color: #222;
+        cursor: pointer;
     }
 
     header .container ul li ul {
