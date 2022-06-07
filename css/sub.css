@@ -45,6 +45,8 @@ td {
 header {
     width: 100%;
     height: 80px;
+    position: fixed;
+    z-index: 5000000;
 }
 
 .logo {
@@ -89,6 +91,9 @@ header .container>ul>li {
     width: 225px;
     line-height: 80px;
 }
+header .container>ul>li:hover{
+    cursor: pointer;
+}
 
 header .container ul li a {
     display: block;
@@ -97,9 +102,6 @@ header .container ul li a {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-/* header .container ul li:hover {
-    background-color: #222;
-} */
 
 header .container ul li ul {
     display: flex;
@@ -113,30 +115,63 @@ header .container>ul>li>ul {
 header .container ul li ul li a {
     line-height: 65px;
     font-size: 15px;
+    background-color: white;
+    transition: 0.5s;
 }
 
-header .container ul li:hover ul {
-    display: block;
+header .container ul li ul li a:hover{
+    background-color:rgb(230, 230, 230)
 }
+
 
 .logo:hover {
     cursor: pointer;
 }
 
-.fix_wrap{
+.fix_wrap {
     width: 100%;
     height: 100vh;
     position: fixed;
     z-index: -5000;
-
 }
+
+.fix_txt{
+position: absolute;
+top:200px;
+left:0;
+font-size: 25px;
+color: white;
+padding-left: 2px;
+}
+
+.fix_txt div span{
+    font-size: 50px;
+    color: black;
+    position: absolute;
+    font-weight: bold;
+    right: calc(100% + 2px);
+}
+
+.line{
+    line-height: 75px;
+}
+
+.line:nth-child(3) span{
+    right: calc(100% + 18px); 
+}
+
 #main_art{
-    margin: 0 auto;
     width: 1340px;
     height: 100vh;
-    margin: 150px 0 0 285px;
-    border: 1px solid black;
+    position: absolute;
+    right: 0;
+    top: 150px;
     background-color: antiquewhite;
+}
+
+#main_art_img{
+    width: 100%;
+    height: 100%;
 }
 
 #artwork{
@@ -149,7 +184,7 @@ header .container ul li:hover ul {
 
 #left_art{
     width: 897px;
-    height: 3641px;
+    height: 3541px;
     margin-top: 100vh;
     background-color: white;
 }
@@ -163,6 +198,7 @@ header .container ul li:hover ul {
 .left_contents h2{
     margin: 77px 0px 27px 0px;
 }
+
 .art_box img{
     width: 90%;
     height: 320px;
@@ -179,12 +215,54 @@ header .container ul li:hover ul {
     position: fixed;
     width: 100%;
     height: 100vh;
-
 }
 
 .right_container img{
     height: 100%;
     width: auto;
+}
+
+.right_txt{
+    transform: 0.8;
+    width: 80%;
+    position: absolute;
+    bottom: 100px;
+    padding-left: 85px ;
+    color: white;
+}
+
+.right_txt h2{
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.right_txt h2:nth-child(3){
+    margin-bottom: 65px;
+}
+
+.right_txt ul{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(121, 121, 121) ;
+}
+.right_txt ul li{
+    width: 150px;
+}
+
+.right_txt ul li a{
+    color:rgb(201, 201, 201);
+    line-height: 60px;
+}
+
+.right_txt ul li a:hover{
+    color: white;
+}
+
+.right_txt ul li i{
+    padding-left: 10px ;
+    display: none;
+    line-height: 0.7;
 }
 
 .detail_text{
@@ -228,7 +306,6 @@ header .container ul li:hover ul {
 .more_art{
     width: 100%;
     height:auto;
-    border: 1px solid black;
 }
 
 .more_art ul{
@@ -236,17 +313,19 @@ header .container ul li:hover ul {
     height: 626px;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+
 }
 
 .more_art ul li{
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
     height: 208px;
     font-size: 13px;
     line-height: 27px;
     padding: 27px 0px;
-    border: 1px solid black;
+    border-top: 1px solid rgb(201, 201, 201);
 }
 
 .more_art ul li img{
@@ -254,64 +333,179 @@ header .container ul li:hover ul {
     height: auto;
 }
 
+
+
+.more_art ul li a{
+    width: 120px;
+    height: 38px;
+    line-height: 36px;
+    display: block;
+    color: rgb(160, 160, 160);
+    border: 1px solid rgb(201, 201, 201);
+    text-align: center;
+    border-radius: 19px;
+    transition: 0.5s;
+}
+
+.more_art ul li a:hover{
+    color: white;
+    background-color: #555;
+}
+
+
+.company_txt{
+    padding: 10px 30px;
+    width: 375px;
+    margin-right: 50px;
+}
+
+.company_txt h3{
+    margin-bottom: 10px;
+}
+
+
 .performance{
     width: 100%;
     height: auto;
-    border: 1px solid black;
 }
 
 .performance_contents{
     width: 100%;
     height: 408px;
     display: flex;
-
-    border: 1px solid black;
 }
 
-.img_box{
+.img_box img{
     width: 461px;
     height: 100%;
-    border: 1px solid black;
 }
 
 .txt_box{
     width: 422px;
     height: 100%;
-    border: 1px solid black;
-    padding: 20px 0 0 68px;
+    padding: 20px 0 0 50px;
 }
+
+.txt_box h4{
+    margin: 13px 0px;
+    font-size: 30px;
+}
+
+.txt_box h4:nth-child(3){
+    margin-bottom: 30px;
+}
+
+.txt_box a{
+    font-size: 12px;
+    width: 120px;
+    height: 38px;
+    line-height: 36px;
+    display: block;
+    color: rgb(160, 160, 160);
+    border: 1px solid rgb(201, 201, 201);
+    text-align: center;
+    border-radius: 19px;
+    transition: 0.5s;
+    margin-top: 50px;
+}
+
+.txt_box a:hover{
+    color: white;
+    background-color: #555;
+}
+
 
 .notice{
     width: 100%;
     height: 219px;
-    border: 1px solid black;
 }
 
 .notice ul{
     display: flex;
     width: 100%;
     height: auto;
-    border: 1px solid black;
 } 
 
 .notice ul li{
     width: 294px;
     height: 73px;
     padding: 13px 0px;
-    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice ul li:nth-child(2){
+    border-top:0;
+    border-bottom: 0;
+    border-color:  rgb(160, 160, 160);;
+    border-style:dashed;
+}
+
+.notice ul li i{
+    font-size: 50px;
+    width: 70px;
+}
+
+.notice ul li a{
+    width: 50%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.notice ul li a span:first-child{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.notice ul li a span:nth-child(2){
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+    text-decoration:underline;
 }
 
 .sns{
+    position: relative;
     width: 100%;
     height: 130px;
-    margin: 80px 0 0 0px;
+    margin: 0px 0 80px 0px;
     border: 1px solid black;
+    background-color: black;
+}
+
+.sns_bg::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url(../img/main/space.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 .sns_txt{
     width: 100%;
     height: 100%;
     padding: 0 55px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sns_text{
+    line-height: 36px;
+}
+
+.sns_icon img{
+    margin-left: 20px;
 }
 
 footer {

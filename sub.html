@@ -9,6 +9,7 @@
 
 
     <link rel="stylesheet" href="css/sub.css">
+    <script src="https://kit.fontawesome.com/eadb9c860a.js" crossorigin="anonymous"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/sub.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
@@ -18,158 +19,250 @@
 
 <body>
     <div id="wrap">
-        <div class="fix_wrap">
-            <header>
-                <div class="container">
-                    <div class="logo"><a href="">SPACE ISU</a></div>
-                    <div class="menu" onclick="left_menu()">MENU</div>
-                    <ul class="left_menu">
-                        <li class="nav1">관람·참여
-                            <ul class="nav_1">
-                                <li><a href="">전시해설</a></li>
-                                <li><a href="">어린이 미술관</a></li>
-                                <li><a href="">이벤트</a></li>
-                                <li><a href="">레지던시</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav2">통합예약
-                            <ul class="nav_2">
-                                <li><a href="">예약하기</a></li>
-                                <li><a href="">예약내역</a></li>
-                                <li><a href="">예약취소</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav3">전시
-                            <ul class="nav_3">
-                                <li><a href="#">과거 전시</a></li>
-                                <li><a href="#">현재 전시</a></li>
-                                <li><a href="#">미래 전시</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav4">교육
-                            <ul class="nav_4">
-                                <li><a href="#">미술관교육소개</a></li>
-                                <li><a href="#">청소년</a></li>
-                                <li><a href="#">성인</a></li>
-                                <li><a href="#">교육자료실</a></li>
-                                <li><a href="#">참여신청</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav5">미술연구
-                            <ul class="nav_5">
-                                <li><a href="#">아카이브</a></li>
-                                <li><a href="#">연구</a></li>
-                                <li><a href="#">발간자료</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </header>
-            <img src="/img/sub/main.jpg" alt="main_img" id="main_art">
-        </div>
-        <!-- 고정된 메인 이미지 -->
-        <div id="artwork">
-            <div id="left_art">
-                <div class="left_contents">
-                    <h2>Introduction</h2>
-                    <div class="art_box"><img src="img/sub/le_top.jpg" alt=""></div>
-                    <div class="detail_text">
-                        <p>이번 전시는 예술가 개인으로서 현실을 인식하고 각자의 고유한 방식으로 사회 속에서 겪는 내밀한 모험의 과정에서부터,</p>
-                        <p>그렇게 만들어진 작품이 어떻게 사회 속의 보편적인 인간의 모험을 담아내고 있는지 엿볼 수 있을 것이다.</p>
-                    </div>
-
-                    <div class="space_container">
-                        <div class="space_img">
-                            <div class="space_art">
-                                <img src="img/sub/guide2.jpg" alt="">
-                            </div>
-                            <h3>전시 목표</h3>
-                            <p>향후 신·중진 작가가 다양한 실험을 하고 작품을 제작할 수 있도록 지원</p>
-                        </div>
-                        <div class="space_img">
-                            <div class="space_art">
-                                <img src="img/main/news_bot.jpg" alt="">
-                            </div>
-                            <h3>전시 광경</h3>
-                            <p>작가의 개성에 맞춰 구역을 나눠 분위기를 조성</p>
-                        </div>
-
-                        <div class="space_img">
-                            <div class="space_art">
-                                <img src="img/main/news_main.jpg" alt="">
-                            </div>
-                            <h3>작가 소개</h3>
-                            <p>이혜인 & 박세진</p>
-                        </div>
-                        <div class="space_img">
-                            <div class="space_art">
-                                <img src="img/sub/guide.jpg" alt="">
-                            </div>
-                            <h3>이외 전시</h3>
-                            <p> 보다 다양한 장르의 작가와 작품을 수집</p>
-                        </div>
-                    </div>
-                    <div class="more_art">
-                        <h2>Art Company</h2>
-                        <ul>
-                            <li>
-                                <img src="img/sub/com.jpg" alt="">
-                                <div class="company_txt">
-                                    <h3>Space Art Lap</h3>
-                                    <p>림배지희는 대화 중에 발설되지 못하고 삼켜진 말들, 꿈속의 장면 등 현실로 표현되지 못하고 남겨진 내면의 정서와 경험들을 흑백의 회화작품들에
-                                        담아낸다. 배헤윰은 회화를 실견하는 현장이 만드는 대치와 관조의 상황에서, 운동감의 생성과 추상으로의 진입 등 사유를 촉발시키는 여러 가지의
-                                        국면을 만드는데 관심이 있다.</p>
-                                </div>
-                                <span>more view</span>
-                            </li>    
-                            <li></li>
-                            <li></li>
+        <header>
+            <div class="container">
+                <div class="logo"><a href="">SPACE ISU</a></div>
+                <div class="menu">MENU</div>
+                <ul class="left_menu">
+                    <li class="nav1">관람·참여
+                        <ul class="nav_1">
+                            <li><a href="">전시해설</a></li>
+                            <li><a href="">어린이 미술관</a></li>
+                            <li><a href="">이벤트</a></li>
+                            <li><a href="">레지던시</a></li>
                         </ul>
-                    </div>
-                    <div class="performance">
-                        <h2>여간 뭐쓰지</h2>
-                        <div class="performance_contents">
-                            <div class="img_box"></div>
-                            <div class="txt_box"></div>
-                        </div>
-                    </div>
-                    <div class="notice">
-                        <h2>이건 공지사항 같은 건디</h2>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                    </li>
+                    <li class="nav2">통합예약
+                        <ul class="nav_2">
+                            <li><a href="">예약하기</a></li>
+                            <li><a href="">예약내역</a></li>
+                            <li><a href="">예약취소</a></li>
                         </ul>
-                    </div>
-                    <div class="sns">
-                        <div class="sns_txt">
-                            <h3>여기 패딩 들어가 있음</h3>
-                            <p>여기 마진탑 15</p>
-                        </div>
-                    </div>
-                    <footer>
-                        <div class="detail">
-                            <div class="container">
-                                <ul>
-                                    <li>대표자 : 최명윤</li>
-                                    <li>문의전화 : 010-2386-2257</li>
-                                    <li>사업장 등록번호 : 111-11-11111</li>
-                                </ul>
-                                <p>경기도 안산시 단원구 고잔2길 45(고잔동) 코스모스프라지 6층</p>
-                            </div>
-                        </div>
-                    </footer>
-                </div>
+                    </li>
+                    <li class="nav3">전시
+                        <ul class="nav_3">
+                            <li><a href="#">과거 전시</a></li>
+                            <li><a href="#">현재 전시</a></li>
+                            <li><a href="#">미래 전시</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav4">교육
+                        <ul class="nav_4">
+                            <li><a href="#">미술관교육소개</a></li>
+                            <li><a href="#">청소년</a></li>
+                            <li><a href="#">성인</a></li>
+                            <li><a href="#">교육자료실</a></li>
+                            <li><a href="#">참여신청</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav5">미술연구
+                        <ul class="nav_5">
+                            <li><a href="#">아카이브</a></li>
+                            <li><a href="#">연구</a></li>
+                            <li><a href="#">발간자료</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div id="right_art">
-                <div class="right_container">
-                    <img src="img/sub/right.jpg" alt="">
+        </header>
+        <div class="fix_wrap">
+            <div id="main_art">
+                <div class="fix_txt">
+                    <div class="line">
+                        <span>SPA</span>
+                        <h1>CE ISU</h1>
+                    </div>
+                    <div class="line">
+                        <span>ART</span>
+                        <h1> EXHIBITION</h1>
+                    </div>
+                    <div class="line">
+                        <span>OIL</span>
+                        <h1> ON CANVAS OF ART SHOW</h1>
+                    </div>
                 </div>
+                <img src="img/sub/main.jpg" alt="main_img" id="main_art_img">
             </div>
         </div>
     </div>
+    <div id="artwork">
+        <div id="left_art">
+            <div class="left_contents">
+                <h2>Introduction</h2>
+                <div class="art_box"><img src="img/sub/le_top.jpg" alt=""></div>
+                <div class="detail_text">
+                    <p>이번 전시는 예술가 개인으로서 현실을 인식하고 각자의 고유한 방식으로 사회 속에서 겪는 내밀한 모험의 과정에서부터,</p>
+                    <p>그렇게 만들어진 작품이 어떻게 사회 속의 보편적인 인간의 모험을 담아내고 있는지 엿볼 수 있을 것이다.</p>
+                </div>
 
+                <div class="space_container">
+                    <div class="space_img">
+                        <div class="space_art">
+                            <img src="img/sub/guide2.jpg" alt="">
+                        </div>
+                        <h3>전시 목표</h3>
+                        <p>향후 신·중진 작가가 다양한 실험을 하고 작품을 제작할 수 있도록 지원</p>
+                    </div>
+                    <div class="space_img">
+                        <div class="space_art">
+                            <img src="img/main/news_bot.jpg" alt="">
+                        </div>
+                        <h3>전시 광경</h3>
+                        <p>작가의 개성에 맞춰 구역을 나눠 분위기를 조성</p>
+                    </div>
 
+                    <div class="space_img">
+                        <div class="space_art">
+                            <img src="img/main/news_main.jpg" alt="">
+                        </div>
+                        <h3>작가 소개</h3>
+                        <p>이혜인 & 박세진</p>
+                    </div>
+                    <div class="space_img">
+                        <div class="space_art">
+                            <img src="img/sub/guide.jpg" alt="">
+                        </div>
+                        <h3>이외 전시</h3>
+                        <p> 보다 다양한 장르의 작가와 작품을 수집</p>
+                    </div>
+                </div>
+                <div class="more_art">
+                    <h2>Art Company</h2>
+                    <ul>
+                        <li>
+                            <img src="img/sub/com.jpg" alt="">
+                            <div class="company_txt">
+                                <h3>Space Art Lap</h3>
+                                <p><b>림배지희</b>는 대화 중에 발설되지 못하고 삼켜진 말들, 꿈속의 장면 등 현실로 표현되지 못하고 남겨진 내면의 정서와 경험들을
+                                    흑백의
+                                    회화작품들에
+                                    담아낸다.</p>
+                            </div>
+                            <a href="">more view</a>
+                        </li>
+                        <li>
+                            <img src="img/sub/com2.jpg" alt="">
+                            <div class="company_txt">
+                                <h3>Space Art Lap</h3>
+                                <p><b>박광수</b>는 주로 펜, 먹이나 검은색 아크릴 물감으로 드로잉을 한다. 그의 작품에 반복적으로 등장하는 숲은 익숙하게 보이지만,
+                                    그에게는
+                                    원초적인 생명력이 꿈틀대는 장소이자 꿈과 현실이 뒤섞인 예측하기 힘든 공간이기도 하다.</p>
+                            </div>
+                            <a href="">more view</a>
+                        </li>
+                        <li>
+                            <img src="img/sub/com3.jpg" alt="">
+                            <div class="company_txt">
+                                <h3>Space Art Lap</h3>
+                                <p><b>조혜정&김숙현</b>은 영상작품을 통해 한국 사회에서 다양한 직업에 있는 사람들이 삶에서 어떻게 나름의 균형을 맞추면서 살아가고
+                                    있는지
+                                    인터뷰한 내용과, 그들의 삶을 무용가의 움직임을 통해 은유적으로 재해석해 보여준다.</p>
+                            </div>
+                            <a href="">more view</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="performance">
+                    <h2>Performance</h2>
+                    <div class="performance_contents">
+                        <div class="img_box">
+                            <img src="img/sub/per.jpg" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <h4>Space Isu</h4>
+                            <h4>Art Company</h4>
+                            <h4>Performance</h4>
+                            <span>#미술전시회 #작품발표회 #행사 및 관람</span>
+                            <a href="">more view</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notice">
+                    <h2>Notice</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-newspaper"></i>
+                            <a href="">
+                                <span>공지사항</span>
+                                <span>view more</span>
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-calendar"></i>
+                            <a href="">
+                                <span>열린마당</span>
+                                <span>view more</span>
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-pen-fancy"></i>
+                            <a href="">
+                                <span>문의하기</span>
+                                <span>view more</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sns">
+                    <div class="sns_bg"></div>
+                    <div class="sns_txt">
+                        <div class="sns_text">
+                            <h3>Social Networking Service of SMD</h3>
+                            <p>스페이스 이수의 전시 SNS 바로가기</p>
+                        </div>
+                        <div class="sns_icon">
+                            <a href=""><img src="img/sub/sns01.png" alt=""></a>
+                            <a href=""><img src="img/sub/sns02.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="detail">
+                        <div class="container">
+                            <ul>
+                                <li>대표자 : 최명윤</li>
+                                <li>문의전화 : 010-2386-2257</li>
+                                <li>사업장 등록번호 : 111-11-11111</li>
+                            </ul>
+                            <p>경기도 안산시 단원구 고잔2길 45(고잔동) 코스모스프라지 6층</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div id="right_art">
+            <div class="right_container">
+                <img src="img/sub/right.jpg" alt="">
+                <div class="right_txt">
+                    <h2>SPACE ISU</h2>
+                    <h2>ART EXHIBITION</h2>
+                    <h2>OIL ON CANVAS OF ART SHOW</h2>
+                    <ul>
+                        <li><a href="" class="arrow">전시소개<i class="fa-solid fa-arrow-right-long"></i></a>
+                        </li>
+                        <li><a href="" class="arrow">전시과정<i class="fa-solid fa-arrow-right-long"></i></a>
+                        </li>
+                        <li><a href="" class="arrow">작품활동<i class="fa-solid fa-arrow-right-long"></i></a>
+                        </li>
+                        <li><a href="" class="arrow">공지사항<i class="fa-solid fa-arrow-right-long"></i></a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><a href="" class="arrow">전시목표<i class="fa-solid fa-arrow-right-long"></i></a>
+                        </li>
+                        <li><a href="" class="arrow">작가소개<i class="fa-solid fa-arrow-right-long"></i></a>
+                        </li>
+                        <li><a href="" class="arrow">미술관 행사<i class="fa-solid fa-arrow-right-long"></i></a>
+                        </li>
+                        <li><a href="" class="arrow">미술관 소개<i class="fa-solid fa-arrow-right-long"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>
