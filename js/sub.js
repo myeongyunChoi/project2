@@ -9,10 +9,12 @@ $(window).scroll(function () {
 function scrollController() {
     currentScrollTop = $(window).scrollTop();
     if (currentScrollTop > 800) {
-        $("#right_art").fadeIn();
+        $("#right_art").fadeIn(800);
+        $(".right_txt").slideDown(1800);
         $("header .container ,.fix_wrap").fadeOut();
     } else {
-        $("#right_art").fadeOut();
+        $("#right_art").fadeOut(800);
+        $(".right_txt").slideUp(1800);
         $("header .container ,.fix_wrap").fadeIn()
     }
 }
@@ -32,7 +34,6 @@ $(function () {
     $(".left_menu").children().hover(function () {
         $(this).children().slideToggle();
     });
-
 });
 
 $(window).on('load scroll',function(){

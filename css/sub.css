@@ -206,7 +206,7 @@ padding-left: 2px;
 }
 
 #right_art{
-    width: 442px;
+    width: auto;
     height: 100vh;
     display: none;
 }
@@ -229,6 +229,7 @@ padding-left: 2px;
     bottom: 100px;
     padding-left: 85px ;
     color: white;
+    display: none;
 }
 
 .right_txt h2{
