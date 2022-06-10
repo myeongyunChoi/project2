@@ -33,7 +33,7 @@ $(function () {
         $(".nav_5").slideToggle(700);
     });
 
-
+   //윈도우 사이즈에 따른 상단 메뉴바 변화
     $(window).resize(function () {
         if (window.innerWidth >= 600) {
             $('.left_menu').css("display", "flex")
@@ -60,15 +60,13 @@ $(function () {
 });
 
 let currentScrollTop = 0;
-
 // 스크롤 할 때마다 실행되는 함수
 $(window).scroll(function () {
     scrollController();
 });
 
 
-// right_art 내리면 보여지는
-
+// right_art scroll 일정 구간에 도달했을 때 보여지는 구간
 if (window.matchMedia("(min-width: 600px)").matches) { 
     function scrollController() {
         currentScrollTop = $(window).scrollTop();
@@ -99,7 +97,7 @@ if (window.matchMedia("(min-width: 600px)").matches) {
 
 
 
-//fix_txt,fadeOut
+//fix_txt text에 스크롤 높이에 따른 fadeOut 효과
 if (window.matchMedia("(min-width: 600px)").matches) { 
     $(window).on('load scroll', function () {
         sct = $(window).scrollTop();

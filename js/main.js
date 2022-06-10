@@ -28,7 +28,7 @@ $(function () {
         $(".nav_5").slideToggle(700);
     });
 
-
+    //윈도우 사이즈에 따른 상단 메뉴바 변화
     $(window).resize(function(){
         if(window.innerWidth>=1340){
             $('.left_menu').css("display","flex")
@@ -42,7 +42,7 @@ $(function () {
     });
 
 
-    // 슬라이드
+    //미술작품 슬라이드
     $('.next').click(function () {
         $('.artwork_slide').stop().animate({ marginLeft: -402 }, 700, function () {
             $('.art_slide_box:first').appendTo('.artwork_slide');
