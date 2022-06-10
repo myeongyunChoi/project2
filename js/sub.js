@@ -2,7 +2,7 @@
 
 $(function () {
     //상단 메뉴바 내려오는 효과
-    $(".left_menu").children().hover(function () {
+    $(".left_menu > li").hover(function () {
         $(this).children().slideDown();
     }, function () {
         $(this).children().slideUp();
@@ -68,10 +68,11 @@ $(window).scroll(function () {
 
 
 // right_art 내리면 보여지는
+
 if (window.matchMedia("(min-width: 600px)").matches) { 
     function scrollController() {
         currentScrollTop = $(window).scrollTop();
-        if (currentScrollTop > 800) {
+        if (currentScrollTop > 900) {
             $("#right_art").fadeIn(800);
             $(".right_txt").slideDown(1800);
             $("header .container ,.fix_wrap").fadeOut();
@@ -97,13 +98,14 @@ if (window.matchMedia("(min-width: 600px)").matches) {
 }
 
 
+
 //fix_txt,fadeOut
 if (window.matchMedia("(min-width: 600px)").matches) { 
     $(window).on('load scroll', function () {
         sct = $(window).scrollTop();
         if (sct <= 600) {
             $('.fix_txt').css({
-                'transform': 'translateY(-' + 0.25 * sct + 'px)',
+                'transform': 'translateY(-' + 0.5 * sct + 'px)',
                 'opacity': 1 - sct / 600
             });
         }
@@ -113,8 +115,8 @@ if (window.matchMedia("(min-width: 600px)").matches) {
         sct = $(window).scrollTop();
         if (sct <= 439) {
             $('.fix_txt').css({
-                'transform': 'translateY(-' + 0.6 * sct + 'px)',
-                'opacity': 1 - sct / 400
+                'transform': 'translateY(-' + 0.5 * sct + 'px)',
+                'opacity': 1 - sct / 300
             });
         }
     });

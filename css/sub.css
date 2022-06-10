@@ -235,7 +235,6 @@ td {
     }
     
     .right_txt{
-        transform: 0.8;
         width: 80%;
         position: absolute;
         bottom: 100px;
@@ -592,11 +591,11 @@ td {
         width:20%;
         line-height: 80px;
         font-weight: bold;
-        font-size: 22px;
+        font-size: 17px;
     }
     
     .menu {
-        width: 250px;
+        width: 270px;
         line-height: 80px;
         font-weight: bold;
         font-size: 22px;
@@ -608,6 +607,7 @@ td {
     }
     
     .logo a {
+        text-align: center;
         width: 100%;
         display: block;
         line-height: 80px;
@@ -623,12 +623,14 @@ td {
         height: 80px;
         width: 100%;
         display: flex;
+        justify-content: space-evenly;
         text-align: center;
     }
     
     header .container>ul>li {
         width: 20%;
         line-height: 80px;
+        font-size: 14px;
     }
     header .container>ul>li:hover{
         cursor: pointer;
@@ -637,7 +639,7 @@ td {
     header .container ul li a {
         display: block;
         color: black;
-        font-size: 18px;
+        font-size: 11px;
         font-family: 'Noto Sans KR', sans-serif;
     }
     
@@ -653,7 +655,7 @@ td {
     
     header .container ul li ul li a {
         line-height: 65px;
-        font-size: 15px;
+        font-size: 11px;
         background-color: white;
         transition: 0.5s;
     }
@@ -675,16 +677,16 @@ td {
     }
     
     .fix_txt{
-    position: absolute;
-    top:200px;
-    left:0;
-    font-size: 25px;
-    color: white;
-    padding-left: 2px;
+        position: absolute;
+        top:200px;
+        left:0;
+        font-size: 21px;
+        color: white;
+        padding-left: 2px;
     }
     
     .fix_txt div span{
-        font-size: 50px;
+        font-size: 2em;
         color: black;
         position: absolute;
         font-weight: bold;
@@ -700,8 +702,8 @@ td {
     }
     
     #main_art{
-        width: 100%;
-        height: 100vh;
+        width: 85%;
+        height: auto;
         position: absolute;
         right: 0;
         top: 150px;
@@ -722,16 +724,15 @@ td {
     }
     
     #left_art{
-        width: 897px;
-        height: 3541px;
+        width: 100%;
+        height: auto;
         margin-top: 100vh;
         background-color: white;
     }
     
     .left_contents{
-        width: 817px;
-        height:100%;
-        margin-right: 80px;
+        width: 100%;
+        height:auto;
     }
     
     .left_contents h2{
@@ -739,8 +740,8 @@ td {
     }
     
     .art_box img{
-        width: 90%;
-        height: 320px;
+        width: 100%;
+        height: auto;
         overflow: hidden;
     }
     
@@ -762,7 +763,6 @@ td {
     }
     
     .right_txt{
-        transform: 0.8;
         width: 80%;
         position: absolute;
         bottom: 100px;
@@ -825,8 +825,9 @@ td {
     
     .space_img{
         width: 50%;
-        height: 497px;
+        height: auto;
         line-height: 30px;
+        padding: 2%;
     }
     
     .space_img h3{
@@ -834,8 +835,8 @@ td {
     }
     
     .space_art{
-        width: 90%;
-        height: 80%;
+        width: 100%;
+        height: 70%;
     }
     
     .space_art img{
@@ -859,12 +860,12 @@ td {
     .more_art ul li{
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
         width: 100%;
         height: 208px;
-        font-size: 13px;
+        font-size: 11px;
         line-height: 27px;
-        padding: 27px 0px;
+        padding: 2% 1.5%;
         border-top: 1px solid rgb(201, 201, 201);
     }
     
@@ -872,8 +873,6 @@ td {
         width: 225px;
         height: auto;
     }
-    
-    
     
     .more_art ul li a{
         width: 120px;
@@ -885,6 +884,7 @@ td {
         text-align: center;
         border-radius: 19px;
         transition: 0.5s;
+        margin-right: 10px;
     }
     
     .more_art ul li a:hover{
@@ -894,45 +894,50 @@ td {
     
     
     .company_txt{
-        padding: 10px 30px;
-        width: 375px;
-        margin-right: 50px;
+        padding: 3%;
+        width: 90%;
     }
     
     .company_txt h3{
-        margin-bottom: 10px;
+        margin-bottom: 2%;
     }
     
     
     .performance{
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     
     .performance_contents{
         width: 100%;
-        height: 408px;
+        height: auto;
         display: flex;
+        justify-content: space-evenly;
     }
     
+    .img_box{
+        width: 60%;
+        height: auto;
+    }
+
     .img_box img{
-        width: 461px;
-        height: 100%;
+        width: 100%;
+        height: auto;
     }
     
     .txt_box{
-        width: 422px;
-        height: 100%;
-        padding: 20px 0 0 50px;
+        width: 40%;
+        height: auto;
+        padding: 2% 5%;
     }
     
     .txt_box h4{
-        margin: 13px 0px;
-        font-size: 30px;
+        margin: 2% 0%;
+        font-size: 1.5em;
     }
     
     .txt_box h4:nth-child(3){
-        margin-bottom: 30px;
+        margin-bottom: 3%;
     }
     
     .txt_box a{
@@ -946,7 +951,7 @@ td {
         text-align: center;
         border-radius: 19px;
         transition: 0.5s;
-        margin-top: 50px;
+        margin-top: 20%;
     }
     
     .txt_box a:hover{
@@ -963,11 +968,12 @@ td {
     .notice ul{
         display: flex;
         width: 100%;
+        justify-content: space-evenly;
         height: auto;
     } 
     
     .notice ul li{
-        width: 294px;
+        width: 33%;
         height: 73px;
         padding: 13px 0px;
         display: flex;
@@ -988,7 +994,6 @@ td {
     }
     
     .notice ul li a{
-        width: 50%;
         color: black;
         display: flex;
         flex-direction: column;
@@ -1050,13 +1055,16 @@ td {
     
     footer {
         width: 100%;
-        height: 135px;
+        height: auto;
+        margin-top: 15px;
+        padding: 5px;
+        border-top: 1px rgb(207, 207, 207) solid;
     }
     
     .detail {
         width: 100%;
-        height: 170px;
-        border-top: 1px #555 solid;
+        height: auto;
+
         padding-top: 50px;
     }
     
@@ -1077,7 +1085,6 @@ td {
     
 
 }
-
 @media(min-width:1340px){
 #wrap {
     width: 100%;
@@ -1178,15 +1185,16 @@ header .container ul li ul li a:hover{
 }
 
 .fix_wrap {
-    width: 100%;
+    width: 85%;
     height: 100vh;
     position: fixed;
     z-index: -5000;
+    right: 0;
 }
 
 .fix_txt{
 position: absolute;
-top:200px;
+top:300px;
 left:0;
 font-size: 25px;
 color: white;
@@ -1210,7 +1218,7 @@ padding-left: 2px;
 }
 
 #main_art{
-    width: 1340px;
+    width: 95%;
     height: 100vh;
     position: absolute;
     right: 0;
@@ -1233,14 +1241,14 @@ padding-left: 2px;
 
 #left_art{
     width: 897px;
-    height: 3541px;
+    height: auto;
     margin-top: 100vh;
     background-color: white;
 }
 
 .left_contents{
     width: 817px;
-    height:100%;
+    height:auto;
     margin-right: 80px;
 }
 
@@ -1272,11 +1280,10 @@ padding-left: 2px;
 }
 
 .right_txt{
-    transform: 0.8;
     width: 80%;
     position: absolute;
     bottom: 100px;
-    padding-left: 85px ;
+    padding-left: 3% ;
     color: white;
     display: none;
 }
@@ -1291,7 +1298,7 @@ padding-left: 2px;
 }
 
 .right_txt ul{
-    width: 500px;
+    width: 38%;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(121, 121, 121) ;
@@ -1421,8 +1428,9 @@ padding-left: 2px;
 
 .performance_contents{
     width: 100%;
-    height: 408px;
+    height: auto;
     display: flex;
+    justify-content: space-around;
 }
 
 .img_box img{
@@ -1520,7 +1528,6 @@ padding-left: 2px;
     width: 100%;
     height: 130px;
     margin: 0px 0 80px 0px;
-    border: 1px solid black;
     background-color: black;
 }
 
@@ -1560,13 +1567,13 @@ padding-left: 2px;
 
 footer {
     width: 100%;
-    height: 135px;
+    height: auto;
+    border-top: 1px rgb(201, 201, 201) solid;
 }
 
 .detail {
     width: 100%;
-    height: 170px;
-    border-top: 1px #555 solid;
+    height: auto;
     padding-top: 50px;
 }
 

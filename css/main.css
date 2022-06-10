@@ -23,7 +23,7 @@ a {
 }
 
 body {
-    background-color: black;
+    background-color: #111;
     color: white;
 }
 
@@ -55,7 +55,7 @@ td {
         position: fixed;
         z-index: 500;
         opacity: 0.9;
-        background-color: black;
+        background-color: #111;
     }
 
     .logo {
@@ -105,7 +105,7 @@ td {
         padding-left: 20px;
         width: 100%;
         line-height: 80px;
-        background-color: black;
+        background-color: #111;
         transition: 0.6s;
     }
 
@@ -166,8 +166,8 @@ td {
         height: 0px;
         border-top: 150px solid transparent;
         border-left: 700px solid transparent;
-        border-bottom: 400px solid black;
-        border-right: 255px solid black;
+        border-bottom: 400px solid #111;
+        border-right: 255px solid #111;
     }
 
     section {
@@ -208,7 +208,7 @@ td {
         flex-direction: column;
         justify-content: space-between;
         margin-top: -120px;
-        background-color: black;
+        background-color: #111
     }
 
     .artwork_more_text {
@@ -270,7 +270,7 @@ td {
         height: auto;
         position: absolute;
         top: 77%;
-        background-color: black;
+        background-color: #111
     }
 
     .art_text h2 {
@@ -308,7 +308,7 @@ td {
         font-size: 11px;
         width: 80%;
         height: auto;
-        background-color: black;
+        background-color: #111;
         position: absolute;
         top: 75%;
     }
@@ -337,7 +337,7 @@ td {
         font-size: 11px;
         width: 80%;
         height: 280px;
-        background-color: black;
+        background-color: #111;
         position: absolute;
         top: 75%;
     }
@@ -370,7 +370,7 @@ td {
         display: flex;
         width: 100%;
         height: 100%;
-        background-color: black;
+        background-color: #111
     }
 
     .slide_head_text {
@@ -649,7 +649,7 @@ td {
         position: fixed;
         z-index: 500;
         opacity: 0.9;
-        background-color: black;
+        background-color: #111
     }
 
     .logo {
@@ -700,7 +700,7 @@ td {
         width: 100%;
         padding-left: 20px;
         line-height: 80px;
-        background-color: black;
+        background-color: #111;
         transition: 0.6s;
     }
 
@@ -757,8 +757,8 @@ td {
         height: 0px;
         border-top: 150px solid transparent;
         border-left: 1040px solid transparent;
-        border-bottom: 450px solid black;
-        border-right: 400px solid black;
+        border-bottom: 450px solid #111;
+        border-right: 400px solid #111;
     }
 
     section {
@@ -859,7 +859,7 @@ td {
         height: 280px;
         position: absolute;
         top: 80%;
-        background-color: black;
+        background-color: #111;
     }
 
     .art_text h2 {
@@ -896,7 +896,7 @@ td {
         font-size: 15px;
         width: 80%;
         height: auto;
-        background-color: black;
+        background-color: #111;
         position: absolute;
         top: 50%;
     }
@@ -924,7 +924,7 @@ td {
         font-size: 15px;
         width: 85%;
         height: auto;
-        background-color: black;
+        background-color: #111;
         position: absolute;
         top: 70%;
     }
@@ -957,7 +957,7 @@ td {
         display: flex;
         width: 100%;
         height: 100%;
-        background-color: black;
+        background-color: #111;
     }
 
     .slide_head_text {
@@ -1223,7 +1223,7 @@ td {
         position: fixed;
         z-index: 500;
         opacity: 0.9;
-        background-color: black;
+        background-color: #111;
     }
 
     .logo {
@@ -1325,8 +1325,8 @@ td {
         height: 0px;
         border-top: 150px solid transparent;
         border-left: 1340px solid transparent;
-        border-bottom: 550px solid black;
-        border-right: 400px solid black;
+        border-bottom: 550px solid #111;
+        border-right: 400px solid #111;
     }
 
     section {
@@ -1403,7 +1403,7 @@ td {
     }
 
     .artwork_more_text a:hover {
-        color: black;
+        color: #111;
         background-color: white;
     }
 
@@ -1426,7 +1426,7 @@ td {
         height: 280px;
         position: absolute;
         top: 55%;
-        background-color: black;
+        background-color: #111;
     }
 
     .art_text h2 {
@@ -1462,7 +1462,7 @@ td {
         font-size: 15px;
         width: 500px;
         height: 280px;
-        background-color: black;
+        background-color: #111;
         position: absolute;
         top: 45%;
     }
@@ -1490,7 +1490,7 @@ td {
         font-size: 15px;
         width: 500px;
         height: 280px;
-        background-color: black;
+        background-color: #111;
         position: absolute;
         top: 71%;
     }
@@ -1524,7 +1524,7 @@ td {
         display: flex;
         width: 100%;
         height: 100%;
-        background-color: black;
+        background-color: #111
     }
 
     .slide_head_text {
