@@ -3,34 +3,34 @@
 $(function () {
     //상단 메뉴바 내려오는 효과
     $(".left_menu > li").hover(function () {
-        $(this).children().slideDown();
+        $(this).children().stop().slideDown();
     }, function () {
-        $(this).children().slideUp();
+        $(this).children().stop().slideUp();
     });
 
     //메뉴 슬라이드
     $(".menu").click(function () {
-        $(".left_menu").slideToggle(700);
+        $(".left_menu").stop().slideToggle(700);
     });
 
     $(".nav1").click(function () {
-        $(".nav_1").slideToggle(700);
+        $(".nav_1").stop().slideToggle(700);
     });
 
     $(".nav2").click(function () {
-        $(".nav_2").slideToggle(700);
+        $(".nav_2").stop().slideToggle(700);
     });
 
     $(".nav3").click(function () {
-        $(".nav_3").slideToggle(700);
+        $(".nav_3").stop().slideToggle(700);
     });
 
     $(".nav4").click(function () {
-        $(".nav_4").slideToggle(700);
+        $(".nav_4").stop().slideToggle(700);
     });
 
     $(".nav5").click(function () {
-        $(".nav_5").slideToggle(700);
+        $(".nav_5").stop().slideToggle(700);
     });
 
    //윈도우 사이즈에 따른 상단 메뉴바 변화
@@ -48,11 +48,11 @@ $(function () {
 
     //right_txt 화살표
     $(".arrow").hover(function () {
-        $(this).children().animate({
+        $(this).children().stop().animate({
             width: 'show'
         });
     }, function () {
-        $(this).children().animate({
+        $(this).children().stop().animate({
             width: 'hide'
         });
     }
